@@ -30,17 +30,6 @@ export default function About() {
                     a business. I firmly believe that a deep understanding of these topics not only makes me a versatile
                     developer but also helps me to create software that provides genuine value.
                 </p>
-                <br/>
-                <p className="text-muted" data-aos="fade-up">
-                    Learning is an never ending journey, and I continuously seek new ways to improve my productivity and
-                    increase my efficiency.
-
-                    I eagerly embrace innovative methodologies, tools, and practices that help to
-                    streamline the development process. Whether it&apos;s a new coding technique, a novel project
-                    management tool, or an emerging trend in the tech industry, I&apos;m always prepared to learn and
-                    integrate it into my workflow. My mission is to grow with every project, pushing boundaries and
-                    driving technological innovation.
-                </p>
             </div>
         </div>
     );
