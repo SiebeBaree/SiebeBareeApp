@@ -1,0 +1,9 @@
+.timeline {
+    border-color: var(--color-text-supersoft-copy);
+}
+
+.timestamp {
+    background: var(--color-text-supersoft-copy);
+    top: 4px;
+    left: -7px;
+}

@@ -1,0 +1,64 @@
+.input input,
+.inputTextArea textarea {
+    border-bottom: 1px solid var(--color-selected)
+}
+
+.input label {
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-50%);
+}
+
+.input input:focus + label,
+.input .active {
+    top: -8px;
+    font-size: 12px;
+}
+
+.inputTextArea label {
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-180%);
+}
+
+.inputTextArea textarea:focus + label,
+.inputTextArea .active {
+    top: -20px;
+    font-size: 12px;
+    transform: translateY(0);
+}
+
+.ctaButtons button {
+    background-color: var(--color-selected);
+}
+
+.ctaButtons button svg {
+    height: 16px;
+}
+
+.ctaButtons button[disabled] {
+    background-color: var(--color-text-supersoft);
+    cursor: wait;
+}
+
+.icon svg {
+    width: 38px;
+}
+
+@media screen and (max-width: 500px) {
+    .icon svg {
+        width: 25px;
+    }
+
+    .ctaButtons button {
+        padding: 5px 15px;
+    }
+
+    .ctaButtons button svg {
+        height: 12px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .icon svg {
+        width: 20px;
+    }
+}

@@ -1,6 +1,17 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import type {AppProps} from 'next/app';
+// import {useEffect} from "react";
+// import AOS from 'aos';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+// import 'aos/dist/aos.css';
+import '@/styles/globals.css';
+
+export default function App({Component, pageProps}: AppProps) {
+    // useEffect(() => {
+    //     AOS.init({
+    //         offset: 100,
+    //         duration: 1000,
+    //     });
+    // }, []);
+
+    return <Component {...pageProps} />
 }

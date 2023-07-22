@@ -1,0 +1,35 @@
+.project {
+    box-shadow: 0 -180px 180px -180px #000 inset;
+}
+
+.ctaButtons svg,
+.ctaButtons button {
+    height: 30px;
+}
+
+.projectText {
+    flex-basis: 100%;
+}
+
+@media screen and (max-width: 450px) {
+    .ctaButtons a[data-hide="true"] {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .projectText {
+        flex-basis: 55%;
+    }
+
+    .ctaButtons svg,
+    .ctaButtons button {
+        height: 38px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .projectText {
+        flex-basis: 66.667%;
+    }
+}
