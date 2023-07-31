@@ -24,7 +24,7 @@ export default function ProfileCard() {
             <Image src="/logo.png" alt="Profile picture of Siebe Barée" width={250} height={250} className="my-5"
                    priority/>
 
-            <a className="text-lg" href="mailto:siebe@baree.be">siebe@baree.be</a>
+            <a className="text-lg" href="mailto:siebe.baree@outlook.com">siebe.baree@outlook.com</a>
             <p className="text-xs text-muted mt-3">© 2023 SiebeBaree. All Rights Reserved</p>
 
             <div className="flex gap-7 my-7">
@@ -36,10 +36,6 @@ export default function ProfileCard() {
                 <Link href="https://www.linkedin.com/in/siebe-baree/" target="_blank"
                       className={`${styles.icon} rounded-full border-2 p-4 flex`}>
                     <LinkedInIcon color="var(--color-text-soft)"/>
-                </Link>
-
-                <Link href="#" target="_blank" className={`${styles.icon} rounded-full border-2 p-4 flex`}>
-                    <DiscordIcon color="var(--color-text-soft)"/>
                 </Link>
             </div>
 
