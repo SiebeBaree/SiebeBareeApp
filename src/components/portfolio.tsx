@@ -2,6 +2,7 @@ import styles from "@/styles/components/portfolio.module.css";
 
 import PortfolioIcon from "@/icons/PortfolioIcon";
 import GitHubIcon from "@/icons/GitHubIcon";
+import Image from "next/image";
 
 export default function Portfolio() {
     return (
@@ -19,35 +20,14 @@ export default function Portfolio() {
 
             <div className="flex flex-col justify-center gap-8">
                 <div
-                    className={`${styles.project} w-full h-96 bg-gray-900 rounded-2xl p-5 flex flex-col justify-between`}
-                    data-aos="fade-up">
-                    <div className="flex justify-between">
-                        <h1 className="text-4xl font-bold">GymLyfe</h1>
-
-                        <div className={`${styles.ctaButtons} items-center justify-end gap-4 basis-1/2 flex sm:hidden`}>
-                            <a href="https://gymlyfe.app/" target="_blank" data-hide="true">
-                                <button className="bg-blue-900 px-6 py-auto rounded-full font-bold">View Project
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="flex justify-between items-center w-full gap-8">
-                        <p className={`${styles.projectText} text-sm`}>
-                            A social media fitness app that allows you to connect with your friends, track your workouts and progress.
-                        </p>
-
-                        <div className={`${styles.ctaButtons} items-center justify-end hidden sm:flex`}>
-                            <a href="https://gymlyfe.app/" target="_blank">
-                                <button className="bg-blue-900 px-6 py-auto rounded-full font-bold">View Project
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    className={`${styles.project} w-full h-96 bg-gray-900 rounded-2xl p-5 flex flex-col justify-between`}
-                    data-aos="fade-up">
+                    className={`${styles.project} w-full h-96 rounded-2xl p-5 flex flex-col justify-between`}
+                    data-aos="fade-up"
+                    style={{
+                        backgroundImage: 'url("/coinz.jpg")',
+                        backgroundPosition: 'center',
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat'
+                    }}>
                     <div className="flex justify-between">
                         <h1 className="text-4xl font-bold">Coinz</h1>
 
