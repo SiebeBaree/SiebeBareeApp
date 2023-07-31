@@ -166,11 +166,6 @@ export default function Contact() {
                               className={`${styles.icon} rounded-full border-0 sm:border-2 p-2 sm:p-3 flex`}>
                             <LinkedInIcon color="var(--color-text-soft)"/>
                         </Link>
-
-                        <Link href="#" target="_blank"
-                              className={`${styles.icon} rounded-full border-0 sm:border-2 p-2 sm:p-3 flex`}>
-                            <DiscordIcon color="var(--color-text-soft)"/>
-                        </Link>
                     </div>
                 </div>
             </form>
