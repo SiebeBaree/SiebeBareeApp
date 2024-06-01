@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Stars from "./stars";
 import styles from "@/styles/Home.module.css";
 import { cn } from "@/lib/utils";
+import WordRotate from "./magicui/word-rotate";
 
 export default function Hero() {
     return (
@@ -14,12 +15,28 @@ export default function Hero() {
                         <span className={styles.magicText}>Siebe Barée</span>
                     </span>
                 </h1>
-                <p className="mb-4 mt-1 text-center text-lg lg:text-left">
-                    A passionate software engineer with a love for web development specializing in Next.js.
-                </p>
+                <div className="mb-4 mt-1">
+                    <p className="flex items-center gap-1 text-center text-lg lg:text-left">
+                        I&apos;m a passionate software engineer with a love for web development and design.
+                    </p>
+                    <p className="hidden items-center justify-center gap-1 text-center text-lg sm:flex lg:justify-normal lg:text-left">
+                        I specialize in
+                        <WordRotate
+                            className="font-medium"
+                            words={[
+                                "Web Development.",
+                                "UI/UX Design.",
+                                "Next.js.",
+                                "Go.",
+                                "Web Performance Optimization.",
+                                "Responsive Design.",
+                            ]}
+                        />
+                    </p>
+                </div>
                 <div className="flex items-center justify-center gap-3 lg:justify-start">
                     <Button>Download CV</Button>
-                    <Button>Contact Me</Button>
+                    {/* <Button>Contact Me</Button> */}
                 </div>
             </div>
             <div>

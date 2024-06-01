@@ -1,8 +1,7 @@
 import About from "@/components/about";
-import Contact from "@/components/contact";
+// import Contact from "@/components/contact";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
-import Testimonials from "@/components/testimonials";
 
 export default function HomePage() {
     return (
@@ -10,8 +9,8 @@ export default function HomePage() {
             <Hero />
             <About />
             <Projects />
-            <Testimonials />
-            <Contact />
+            {/* <Testimonials /> */}
+            {/* <Contact /> */}
         </main>
     );
 }

@@ -170,7 +170,10 @@ export default function Technology({ className, name }: { className?: string; na
     return (
         <HoverCard>
             <HoverCardTrigger
-                className={cn("flex h-24 w-24 items-center justify-between rounded-lg bg-white p-4", className)}
+                className={cn(
+                    "flex h-24 w-24 items-center justify-between rounded-lg border bg-white p-4 shadow-sm",
+                    className,
+                )}
             >
                 <Image src={`/icons/${name}.svg`} alt={`Icon of the skill: ${tech.name}`} height={128} width={128} />
             </HoverCardTrigger>

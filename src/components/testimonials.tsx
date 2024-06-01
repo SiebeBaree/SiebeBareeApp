@@ -81,7 +81,7 @@ export default function Testimonials() {
                                     />
                                 </CardHeader>
                                 <CardContent className="flex-grow">{testimonial.content}</CardContent>
-                                <CardFooter className="flex w-full items-center justify-between rounded-b-xl bg-black/50 py-4">
+                                <CardFooter className="flex w-full items-center justify-between rounded-b-xl bg-black/5 py-4">
                                     <div>
                                         <h5 className="-mb-1 text-xl font-medium">{testimonial.name}</h5>
                                         <p className="text-sm">{testimonial.position}</p>

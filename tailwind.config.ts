@@ -13,7 +13,7 @@ const config = {
         extend: {
             colors: {
                 border: "var(--border)",
-                input: "var(--input)",
+                input: "hsl(var(--input))",
                 background: "hsl(var(--background) / <alpha-value>)",
                 foreground: "hsl(var(--foreground) / <alpha-value>)",
                 primary: {
@@ -58,11 +58,20 @@ const config = {
                     "0%": { transform: "translateY(100%)" },
                     "100%": { transform: "translateY(0)" },
                 },
+                orbit: {
+                    "0%": {
+                        transform: "rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)",
+                    },
+                    "100%": {
+                        transform: "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
+                    },
+                },
             },
             animation: {
                 "accordion-down": "accordion-down 0.2s ease-out",
                 "accordion-up": "accordion-up 0.2s ease-out",
                 "slide-in-up": "slide-in-up 0.2s ease-out forwards",
+                orbit: "orbit calc(var(--duration)*1s) linear infinite",
             },
         },
     },

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Code2Icon, HomeIcon, type LucideIcon, MailIcon, Menu, UserIcon } from "lucide-react";
+import { Code2Icon, HomeIcon, type LucideIcon, Menu, UserIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -20,11 +20,11 @@ const routes = [
         href: "#projects",
         icon: Code2Icon,
     },
-    {
-        name: "Contact Me",
-        href: "#contact",
-        icon: MailIcon,
-    },
+    // {
+    //     name: "Contact Me",
+    //     href: "#contact",
+    //     icon: MailIcon,
+    // },
 ];
 
 export default function Navbar() {
