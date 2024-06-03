@@ -106,10 +106,10 @@ const projects: Project[] = [
 
 export default function Projects() {
     return (
-        <div className="my-48 flex flex-col items-center justify-center">
+        <div className="my-48 flex flex-col items-center justify-center" id="projects">
             <h2 className="mb-20 text-5xl font-semibold">My Work</h2>
 
-            <div className="grid w-full grid-cols-2 gap-4">
+            <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
                 {projects.map((project) => (
                     <ProjectCard key={project.name} project={project} />
                 ))}

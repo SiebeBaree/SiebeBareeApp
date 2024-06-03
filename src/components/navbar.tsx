@@ -7,17 +7,17 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 const routes = [
     {
         name: "Home",
-        href: "#home",
+        href: "/",
         icon: HomeIcon,
     },
     {
         name: "About Me",
-        href: "#about",
+        href: "/#about",
         icon: UserIcon,
     },
     {
         name: "Projects",
-        href: "#projects",
+        href: "/#projects",
         icon: Code2Icon,
     },
     // {
@@ -30,7 +30,9 @@ const routes = [
 export default function Navbar() {
     return (
         <nav className="container mx-auto flex h-[60px] items-center justify-between gap-12 px-4 py-3">
-            <h1 className="text-2xl font-bold">Siebe Barée</h1>
+            <Link href="/" className="text-2xl font-bold">
+                Siebe Barée
+            </Link>
 
             <div className="hidden items-center gap-4 md:flex">
                 {routes.map((route, index) => (

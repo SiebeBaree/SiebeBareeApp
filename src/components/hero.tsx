@@ -3,6 +3,9 @@ import Stars from "./stars";
 import styles from "@/styles/Home.module.css";
 import { cn } from "@/lib/utils";
 import WordRotate from "./magicui/word-rotate";
+import Image from "next/image";
+
+import HeroImg from "../../public/hero_img.png";
 
 export default function Hero() {
     return (
@@ -19,8 +22,8 @@ export default function Hero() {
                     <p className="flex items-center gap-1 text-center text-lg lg:text-left">
                         I&apos;m a passionate software engineer with a love for web development and design.
                     </p>
-                    <p className="hidden items-center justify-center gap-1 text-center text-lg sm:flex lg:justify-normal lg:text-left">
-                        I specialize in
+                    <div className="hidden items-center justify-center gap-1 text-center text-lg sm:flex lg:justify-normal lg:text-left">
+                        <p>I specialize in</p>
                         <WordRotate
                             className="font-medium"
                             words={[
@@ -32,7 +35,7 @@ export default function Hero() {
                                 "Responsive Design.",
                             ]}
                         />
-                    </p>
+                    </div>
                 </div>
                 <div className="flex items-center justify-center gap-3 lg:justify-start">
                     <Button>Download CV</Button>
@@ -40,7 +43,8 @@ export default function Hero() {
                 </div>
             </div>
             <div>
-                <div className="h-72 w-72 rounded-lg bg-gray-800 md:h-96 md:w-96"></div>
+                {/* <div className="h-72 w-72 rounded-lg bg-gray-800 md:h-96 md:w-96"></div> */}
+                <Image src={HeroImg} alt="Apple memoji about me" className="h-72 w-72 md:h-[421px] md:w-[421px]" />
             </div>
         </div>
     );

@@ -8,11 +8,11 @@ import NumberTicker from "./magicui/number-ticker";
 
 export default function About() {
     return (
-        <div className={cn(styles.cards, "flex flex-col gap-4")}>
+        <div className={cn(styles.cards, "flex flex-col gap-4")} id="about">
             <div className="grid min-h-[370px] gap-4 lg:grid-cols-2">
                 <div className="col-span-1 grid grid-cols-2 gap-4">
                     <Card className="lg:p-4">
-                        <StatisticCard title="Projects Completed" value={15} suffix="+" />
+                        <StatisticCard title="Projects" value={15} suffix="+" />
                     </Card>
                     <Card className="lg:p-4">
                         <StatisticCard title="Experience" value={4} suffix="years" />
@@ -37,10 +37,6 @@ export default function About() {
                                 <Image src="/waving.png" alt="My Apple Memoji Waving At You" height={180} width={180} />
                             </span>
                             <p className="pb-0 text-muted-foreground">
-                                {/* I started my programming journey in 2020 when I was 16 years old. I was bored during
-                                lockdown and decided to learn something new. I started with Python as this was an easy
-                                language to start with. I started building a discord bot and grew to love programming.
-                                After a year I decided to learn JavaScript (Node.js) */}
                                 Mijn naam is Siebe Barée, ik ben een ambitieuze en gedreven bachelorstudent met een
                                 sterke passie voor technologie (programmeren), frontend ontwikkeling, business, en
                                 UI/UX. Van jongs af aan ben ik gefascineerd door het creëren van projecten, in het begin
