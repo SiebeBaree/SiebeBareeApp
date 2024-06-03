@@ -180,6 +180,8 @@ export default function School() {
                 <h2 className="mb-20 text-5xl font-semibold">Uitgeschreven activiteiten</h2>
                 <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
                     <RedirectCard title="Coinz" href="/activiteiten/coinz" />
+                    <RedirectCard title="HabitFlow" href="/activiteiten/habitflow" />
+                    <RedirectCard title="BIP: Rosenheim" href="/activiteiten/rosenheim" />
                 </div>
             </div>
         </div>
